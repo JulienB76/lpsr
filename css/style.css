@@ -142,7 +142,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 70px;
 }
 .section-title .overlay {
-	padding: 80px 0;
+	padding: 50px 0;
 	background: rgba(0, 0, 0, 0.7);
 }
 .section-title p {
@@ -151,7 +151,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title hr {
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .btn-custom {
 	text-transform: uppercase;
@@ -241,56 +241,31 @@ header .intro-text {
 }
 /* Menu Section */
 #restaurant-menu {
-	padding: 0 0 60px 0;
-}
-#restaurant-menu .section-title {
-	background: #444 url(../img/menu-bg.jpg) center center no-repeat fixed;
-	background-size: cover;
-}
-#restaurant-menu .section-title h2 {
-	color: #fff;
-}
-#restaurant-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
+	padding: 120px 0;
 }
 #restaurant-menu h3 {
-	padding: 10px 0;
-	text-transform: uppercase;
+	font-size: 20px;
 }
-#restaurant-menu .menu-section hr {
-	margin: 0 auto;
+#restaurant-menu .about-text {
+	margin-left: 10px;
 }
-#restaurant-menu .menu-section {
-	margin: 0 20px 80px;
+#restaurant-menu .about-img {
+	display: inline-block;
+	position: relative;
 }
-#restaurant-menu .menu-section-title {
-	font-size: 26px;
+#restaurant-menu .about-img:before {
 	display: block;
-	font-weight: 500;
-	color: #444;
-	margin: 20px 0;
-	text-align: center;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
 }
-#restaurant-menu .menu-item {
-	margin: 35px 0;
-	font-size: 18px;
-}
-#restaurant-menu .menu-item-name {
-	font-weight: 600;
-	font-size: 17px;
-	color: #555;
-	border-bottom: 2px dotted rgb(213, 213, 213);
-}
-#restaurant-menu .menu-item-description {
-	font-style: italic;
-	font-size: 15px;
-}
-#restaurant-menu .menu-item-price {
-	float: right;
-	font-weight: 600;
-	color: #555;
-	margin-top: -26px;
+#restaurant-menu p {
+	line-height: 24px;
+	margin: 15px 0 5px;
 }
 /* Portfolio Section */
 #portfolio {
@@ -304,6 +279,10 @@ header .intro-text {
 #portfolio .section-title h2 {
 	color: #fff;
 }
+#portfolio p {
+	color: #fff;
+	font-family: 'Port Lligat Slab';
+}
 .categories {
 	padding-bottom: 30px;
 	text-align: center;
@@ -314,7 +293,7 @@ ul.cat li {
 ol.type li {
 	display: inline-block;
 	margin: 0 10px;
-	padding: 20px 0;
+	padding: 50px 0;
 }
 ol.type li a {
 	color: #999;
