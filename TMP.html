@@ -35,35 +35,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
-	<style>
-      @font-face {
-        font-display: block;
-        font-family: Roboto;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-      }
-
-      @font-face {
-        font-display: fallback;
-        font-family: Roboto;
-        font-weight: 600;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-      }
-
-      @font-face {
-        font-display: fallback;
-        font-family: Roboto;
-        font-weight: 700;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-      }
-    </style>
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/61c63ac2f8837041dc7e.css">
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/74ef9830e6b42f1f3c59.css">
-    <link rel="stylesheet" href="https://forms.sendinblue.com/forms/end-form/build/styles.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-	
-	
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
@@ -88,7 +59,7 @@
 				<li><a href="#about" class="page-scroll">Le quoi ?</a></li>
 				<li><a href="#portfolio" class="page-scroll">Le Pain</a></li>
 				<li><a href="#contact" class="page-scroll">Contacts</a></li>
-				<li><a href="#news" class="page-scroll">Lettre d'information</a></li>
+				<li><a href="newsletter.html" onclick="open('newsletter.html', 'Popup', 'scrollbars=1,resizable=1,height=600,width=420'); return false;">S'inscrire</a></li>
 			  </ul>
 			</div>
 		</div>
@@ -214,120 +185,10 @@
     <div class="col-md-4">
       <h3>Email</h3>
       <div class="contact-item">
-        <p><a href="mailto:lepainsansrire@free.fr"/>contact@lepainsansrire.fr</a></p>
+        <p><a href="mailto:lepainsansrire@free.fr"/>contact@lepainsansrire.fr</p>
       </div>
     </div>
   </div>
-</div>
-<!-- news Section -->
-<div id="news" class="text-center">
-  <div id="error-message" class="form-message-panel" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D; max-width:350px;">
-      <p class="form-message-panel__text form-message-panel__text--center">
-        Nous n&#039;avons pas pu confirmer votre inscription.
-      </p>
-    </div>
-    <div></div>
-    <div id="success-message" class="form-message-panel" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#00CF6D; background-color:#D6F2E1; border-radius:3px; border-color:#00CF6D; max-width:350px;">
-      <p class="form-message-panel__text form-message-panel__text--center">
-        Votre inscription est confirmée.
-      </p>
-    </div>
-    <div></div>
-    <div id="sib-container" style=" text-align:center; background-color:rgba(253,249,233,1); max-width:350px; border-radius:8px; border-width:2px; border-color:#C0CCD9; border-style:solid;">
-
-      <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIEAM8GAchIaVdrguJq3QPyWBlQPJ0-6YI1w8SBtQovXoqwOllXZGjCOiYWfzaQThVw3dDXLkTzSydEga_Jqmp4AE1lPYqSZyPXjWk0ETjSiwoJMVJW0TVlLaaN8s4aO5hwr1jFiuk2xb7KXU2f-zIvnncc2ZYIRoFbr-0Rdkmo7f4zpsF7jk5AJlZx1EGc5ZSARdTDMz4Ymefh">
-
-        <div class="form-block" style=" font-size:30px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
-          <p>Lettre d'information</p>
-        </div>
-
-        <div class="form-block" style=" font-size:13px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#667386; background-color:transparent;">
-          <div class="text-form-block">
-            <p>Inscrivez-vous à notre lettre pour suivre l'actualité du Pain Sans Rire</p>
-          </div>
-        </div>
-
-        <div class="sib-input form-block">
-          <div class="form__entry entry_block">
-            <div class="form__label-row ">
-              <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">
-                Entrez votre EMAIL
-              </label>
-              <div class="entry__field">
-                <input type="email" class="input" id="defaultEMAIL" name="defaultEMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
-              </div>
-            </div>
-            <label class="entry__error entry__error--primary" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D;">
-            </label>
-          </div>
-        </div>
-
-        <div class="form-block" style="text-align: left">
-          <button class="form-block__button" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#cba37d; border-radius:3px;" form="sib-form" type="submit">
-            S&#039;INSCRIRE
-          </button>
-          <div class="loader" style="display: none;">
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-          </div>
-        </div>
-
-        <div class="sib-captcha form-block">
-          <div class="form__entry entry_block">
-            <div class="form__label-row ">
-              <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="">
-                Formulaire sécurisé par reCAPTCHA
-              </label>
-              <script>
-                function handleCaptchaResponse() {
-                  var event = new Event('captchaChange');
-                  document.getElementById('sib-captcha').dispatchEvent(event);
-                }
-              </script>
-              <div class="g-recaptcha" id="sib-captcha" data-sitekey="6LerLowUAAAAANLsKemu49dcpoxjLE1U7SrDjMu8" data-callback="handleCaptchaResponse"></div>
-            </div>
-            <label class="entry__error entry__error--primary" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D;">
-            </label>
-          </div>
-        </div>
-
-        <div class="form-block" style=" font-size:14px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent;">
-          <div class="text-form-block">
-            <p>
-              <a href="https://sendinblue.com" target="target_blank">Conditions générales et politique de confidentialité</a>
-            </p>
-          </div>
-        </div>
-
-      </form>
-    </div>
-    <script>
-      window.EMAIL_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-      window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
-      window.GENERIC_INVALID_MESSAGE = window.EMAIL_INVALID_MESSAGE;
-
-
-      window.translation = {
-        common: {
-          selectedList: '{quantity} liste sélectionnée',
-          selectedLists: '{quantity} listes sélectionnées'
-        }
-      };
-
-      var AUTOHIDE = Boolean(1);
-    </script>
-    <script src="https://forms.sendinblue.com/forms/end-form/build/main.js">
-    </script>
 </div>
 <div id="footer">
   <div class="container-fluid text-center copyrights">
