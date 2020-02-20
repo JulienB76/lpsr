@@ -2,166 +2,239 @@
 <html lang="fr">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="https://static.sendinblue.com/images/favicon.ico" />
-    <title>Document</title>
-    <style>
-      @font-face {
-        font-display: block;
-        font-family: Roboto;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-      }
+<!-- Begin Sendinblue Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
 
-      @font-face {
-        font-display: fallback;
-        font-family: Roboto;
-        font-weight: 600;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-      }
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
 
-      @font-face {
-        font-display: fallback;
-        font-family: Roboto;
-        font-weight: 700;
-        src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-      }
-    </style>
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/61c63ac2f8837041dc7e.css">
-    <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/74ef9830e6b42f1f3c59.css">
-    <link rel="stylesheet" href="https://forms.sendinblue.com/forms/end-form/build/styles.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+
+  #sib-container input:-ms-input-placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+    border-width: px;
+  }
+
+  #sib-container input::placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+    border-width: px;
+  }
+</style>
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/progress-indicator/f86d65a4a9331c5e2851.css">
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<!--  END - We recommend to place the above code in head tag of your website html -->
   </head>
 
   <body style="text-align: center;
    background-color: #E5EDF5;             ">
-    <div id="error-message" class="form-message-panel" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D; max-width:350px;">
-      <p class="form-message-panel__text form-message-panel__text--center">
-        Nous n&#039;avons pas pu confirmer votre inscription.
-      </p>
+   
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<div class="sib-form" style="text-align: center;
+         background-color: #E5EDF5;                                 ">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-width:px; border-color:#FF474D;max-width:350px; border-width:px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+          />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          Nous n&#039;avons pas pu confirmer votre inscription.
+                      </span>
+      </div>
     </div>
     <div></div>
-    <div id="success-message" class="form-message-panel" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#00CF6D; background-color:#D6F2E1; border-radius:3px; border-color:#00CF6D; max-width:350px;">
-      <p class="form-message-panel__text form-message-panel__text--center">
-        Votre inscription est confirmée. Un message de validation a été envoyé sur votre email, veuillez consulter votre messagerie.
-      </p>
+    <div id="success-message" class="sib-form-message-panel" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#00CF6D; background-color:#D6F2E1; border-radius:3px; border-width:px; border-color:#00CF6D;max-width:350px; border-width:px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+          />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          Votre inscription est confirmée.
+                      </span>
+      </div>
     </div>
     <div></div>
-    <div id="sib-container" style=" text-align:center; background-color:rgba(253,249,233,1); max-width:350px; border-radius:8px; border-width:2px; border-color:#C0CCD9; border-style:solid;">
-
-      <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIEAD-Yrh2j2bOJkBZln0PabV-sOZFyaO1dyI76DDvQSgjR48UNcjsWpwBOZh79zyY-xNZkv78UATdxfqW2fq5XuUMp7cRmlQ6nwVKGZkeCrsFQ8-yNsfshjaxU3Fsvbi3TR7Ajc_5IBSH9RjjuDbMxSNAUGQGEvdr4gp_ZVURv0uGAp3n2FtQIXl7AYQQgk-QTbZrrp7LQITrJ">
-
-        <div class="form-block image-form-block" style="text-align: center">
-          <img src="https://img.mailinblue.com/2212253/images/rnb/original/5c50ad96405c020013270291.png" style="width: 90px;height: 78px;" alt="" title="" />
-        </div>
-
-        <div class="form-block" style=" font-size:30px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">
-          <p>Lettre d'information</p>
-        </div>
-
-        <div class="form-block" style=" font-size:13px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#667386; background-color:transparent;">
-          <div class="text-form-block">
-            <p>Vous voulez toujours plus d'informations sur Le Pain Sans Rire ? Une seule solution : inscrivez vous !</p>
+    <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:center; background-color:rgba(253,249,233,1); max-width:350px; border-radius:8px; border-width:2px; border-color:#C0CCD9; border-style:solid;">
+      <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIEAPg9GpPP7XnvbUG8fdHqyhuuEblXMdvAR4va0yvFa4cBhnXpO48z6Iv7KvTI5ckREq2ejIw_3BGlZ94xUpi6wZ5k33ZtGUEdh686dj9FbhrkCPEw80hxUaCgiLT1eZouZqqwi3ME8YTIaYQRfuT2yfA1ta3yeji2VJrbjQ6UirsNtgnKqqQ9EIC6I7zvhvajcpSBDGOPdulF"
+        data-type="subscription">
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block sib-image-form-block" style="text-align: center">
+            <img src="https://img.mailinblue.com/2212253/images/rnb/original/5c50ad96405c020013270291.png" style="width: 90px;height: 78px;" alt="" title="" />
           </div>
         </div>
-
-        <div class="sib-input form-block">
-          <div class="form__entry entry_block">
-            <div class="form__label-row ">
-              <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">
-                Entrez votre EMAIL
-              </label>
-              <div class="entry__field">
-                <input type="email" class="input" id="defaultEMAIL" name="defaultEMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
-              </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block" style="font-size:30px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
+            <p>Lettre d'information</p>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block" style="font-size:13px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#667386; background-color:transparent; border-width:px;">
+            <div class="sib-text-form-block">
+              <p>Vous voulez toujours plus d'informations sur Le Pain Sans Rire ? Une seule solution : inscrivez vous !</p>
             </div>
-            <label class="entry__error entry__error--primary" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D;">
-            </label>
           </div>
         </div>
-
-        <div class="sib-captcha form-block">
-          <div class="form__entry entry_block">
-            <div class="form__label-row ">
-              <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="">
-                Formulaire sécurisé par reCAPTCHA
-              </label>
-              <script>
-                function handleCaptchaResponse() {
-                  var event = new Event('captchaChange');
-                  document.getElementById('sib-captcha').dispatchEvent(event);
-                }
-              </script>
-              <div class="g-recaptcha" id="sib-captcha" data-sitekey="6LerLowUAAAAANLsKemu49dcpoxjLE1U7SrDjMu8" data-callback="handleCaptchaResponse"></div>
-            </div>
-            <label class="entry__error entry__error--primary" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D;">
-            </label>
-          </div>
-        </div>
-
-        <div class="sib-optin form-block" data-required="true">
-          <div class="form__entry entry_mcq">
-            <div class="form__label-row ">
-              <div class="entry__choice">
-                <label>
-                  <input type="checkbox" class="input_replaced" value="true" id="VALIDATION_POL_CONF" name="VALIDATION_POL_CONF" required />
-                  <span class="checkbox checkbox_tick_positive"></span>Je reconnais avoir pris connaissance du document pompeusement nommé &quot;Politique de confidentialité&quot;, dont le lien s&#039;affiche ci-dessous
+        <div style="padding: 16px 0;">
+          <div class="sib-checkbox-group sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858; border-width:px;" data-required="*">
+                  Choisissez les listes auxquelles vous souhaitez vous inscrire
                 </label>
+                <div>
+                  <div class="entry__choice">
+                    <label class="checkbox__label">
+                      <input type="checkbox" class="input_replaced" name="lists_31[]" data-value="Informations commerciales (nouveaux produits, tarifs, congés, etc.)" value="5" data-required="true" />
+                      <span class="checkbox checkbox_tick_positive"></span><span style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">Informations commerciales (nouveaux produits, tarifs, congés, etc.)</span>                      </label>
+                  </div>
+                  <div class="entry__choice">
+                    <label class="checkbox__label">
+                      <input type="checkbox" class="input_replaced" name="lists_31[]" data-value="Informations générales" value="2" data-required="true" />
+                      <span class="checkbox checkbox_tick_positive"></span><span style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">Informations générales</span>                      </label>
+                  </div>
+                </div>
               </div>
+              <label class="entry__error entry__error--primary" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-width:px; border-color:#FF474D;">
+              </label>
             </div>
-            <label class="entry__error entry__error--primary" style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-color:#FF474D;">
-            </label>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <label class="entry__label" style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858; border-width:px;" for="EMAIL" data-required="*">
+                  Entrez votre EMAIL
+                </label>
+
+                <div class="entry__field">
+                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                </div>
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-width:px; border-color:#FF474D;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-captcha sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <script>
+                  function handleCaptchaResponse() {
+                    var event = new Event('captchaChange');
+                    document.getElementById('sib-captcha').dispatchEvent(event);
+                  }
+                </script>
+                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LerLowUAAAAANLsKemu49dcpoxjLE1U7SrDjMu8" data-callback="handleCaptchaResponse"></div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-width:px; border-color:#FF474D;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-optin sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row ">
+                <div class="entry__choice">
+                  <label>
+                    <input type="checkbox" class="input_replaced" value="1" id="VALIDATION_POL_CONF" name="VALIDATION_POL_CONF" required />
+                    <span class="checkbox checkbox_tick_positive"></span><span style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">Je reconnais avoir pris connaissance du document pompeusement nommé &quot;Politique de confidentialité&quot;, dont le lien s&#039;affiche ci-dessous</span>                    <span data-required="*" class="entry__label entry__label_optin"></span>
+                  </label>
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#FF474D; background-color:#FFE4E2; border-radius:3px; border-width:px; border-color:#FF474D;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block" style="font-size:14px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent; border-width:px;">
+            <div class="sib-text-form-block">
+              <p>
+                <a href="https://www.lepainsansrire.fr/mentions_legales_confidentialite_donnees.pdf" target="target_blank">Politique de confidentialité</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 16px 0;">
+          <div class="sib-form-block" style="text-align: center">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#cba37d; border-radius:3px; border-width:0px;"
+              form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                />
+              </svg>
+              S&#039;INSCRIRE
+            </button>
           </div>
         </div>
 
-        <div class="form-block" style=" font-size:14px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#333; background-color:transparent;">
-          <div class="text-form-block">
-            <p>
-              <a href="https://www.lepainsansrire.fr/mentions_legales_confidentialite_donnees.pdf" target="target_blank">Politique de confidentialité</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="form-block" style="text-align: center">
-          <button class="form-block__button" style=" font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#cba37d; border-radius:3px;" form="sib-form" type="submit">
-            S&#039;INSCRIRE
-          </button>
-          <div class="loader" style="display: none;">
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-            <div style="background: #cba37d;"></div>
-          </div>
-        </div>
-
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="fr">
       </form>
     </div>
-    <script>
-      window.EMAIL_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-      window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
-      window.GENERIC_INVALID_MESSAGE = window.EMAIL_INVALID_MESSAGE;
+  </div>
+</div>
+<!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
+
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+
+  window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
+
+  window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
 
 
-      window.translation = {
-        common: {
-          selectedList: '{quantity} liste sélectionnée',
-          selectedLists: '{quantity} listes sélectionnées'
-        }
-      };
 
-      var AUTOHIDE = Boolean(1);
-    </script>
-    <script src="https://forms.sendinblue.com/forms/end-form/build/main.js">
-    </script>
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Veuillez choisir au moins une option';
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} liste sélectionnée',
+      selectedLists: '{quantity} listes sélectionnées'
+    }
+  };
+
+  var AUTOHIDE = Boolean(1);
+</script>
+<script src="https://sibforms.com/forms/end-form/build/main.js">
+</script>
+<script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
+<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+<!-- End Sendinblue Form -->
+   
+   
+   
+   
   </body>
-
+  
 </html>
